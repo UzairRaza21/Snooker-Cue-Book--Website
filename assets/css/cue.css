@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--website-font-family);
+}
+:root{
+    --primary-font-color: black;
+    --secondary-font-color: white;
+    --website-font-family:  "Ubuntu";
+    --heading-1-font-size-1920px: 48px;
+    --heading-2-font-size-1920px: 40px;
+    --heading-3-font-size-1920px: 32px;
+    --para-font-size-1920px: 18px;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary-font-color);
+}
+li{
+    list-style: none;
+}
+.cue-container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Nav Bar Start */
+
+/* Desktop */
+.cue-desktop-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 5px;
+}
+.cue-logo img{
+    width: 100%;
+}
+.desktop-nav-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.desktop-signup-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hamburger-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+/* Mobile */
+
+.mobile-nav-links{
+    width: 100%;
+    text-align: center;
+    padding-inline: 0px !important;
+    /* visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease; */
+    display: none;
+}
+.mobile-nav-links li{
+    padding-block: 10px;
+    background-color: greenyellow;
+    
+}
+
+/* Nav Bar End */
+
+/* Hero section start */
+header{
+    background-image: url(../images/green-hero.jpg);
+    background-size: cover;
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.cue-hero-section{
+    display: flex;
+    color: var(--secondary-font-color);
+    align-items: center;
+}
+.cue-hero-section h1{
+    font-size: var(--heading-1-font-size-1920px);
+    font-weight: 400;
+}
+.cue-hero-section h2{
+    font-size: var(--heading-3-font-size-1920px);
+    font-weight: 300;
+}
+.cue-hero-section button{
+    border: 0;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: var(--website-font-family);
+    font-size: 15px;
+    background-color: rgb(245, 177, 4);
+    color: var(--secondary-font-color);
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-icon{
+        display: block;
+    }
+    .desktop-nav-links{
+        display: none;
+    }
+    .desktop-signup-links{
+        display: none;
+    }
+    .cue-desktop-nav{
+        justify-content: space-between;
+    }
+    .mobile-nav-show{
+        /* opacity: 1;
+        visibility: visible;  */
+        display: block;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}
