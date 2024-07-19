@@ -160,7 +160,7 @@ header{
 .cue-section-4-cart-row{
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .cue-section-4-cart{
     width: 200px;
